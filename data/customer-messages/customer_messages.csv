@@ -1,0 +1,16 @@
+customer_id,message,category
+C1001,My home loan application has been pending for three weeks and nobody from the branch has called me back. I have already submitted my documents twice.,Loan
+C1002,Could you please tell me the current status of my home loan application? I submitted it on 14 February.,Loan
+C1003,I have tried to update my KYC on the mobile app four times and it keeps failing at the Aadhaar step. This is extremely frustrating and no one is helping.,KYC
+C1004,Thank you for the quick turnaround on my property valuation. The relationship manager was very helpful throughout.,Loan
+C1005,My account opening request failed and I was never told why. I have wasted two visits to the branch.,Account
+C1006,"I raised a complaint about an unauthorised card transaction of 14,200 rupees eleven days ago and I have still not received the provisional credit. I will escalate this to the ombudsman.",Complaint
+C1007,"I want to know whether I am eligible for a personal loan with a net monthly income of 34,000 rupees.",Loan
+C1008,The minimum balance charge levied on my salary account last month appears to be incorrect. Please review it.,Account
+C1009,Please confirm which documents I need to submit for periodic KYC updation. My account is categorised as low risk.,KYC
+C1010,"Absolutely appalling service. Three visits, two phone calls, zero answers about my loan. I am closing every account I have with this bank.",Complaint
+C1011,The new mobile app is much faster than the old one. Very happy with the update.,General
+C1012,My credit card limit enhancement request was rejected without any explanation. Can someone tell me the reason?,Card
+C1013,I need my home loan sanction letter reissued with a corrected spelling of my name.,Loan
+C1014,Nobody has responded to my complaint reference CMP-2026-8841 for over a month now. This is unacceptable.,Complaint
+C1015,What is the processing fee for a home loan of 50 lakh rupees?,Loan

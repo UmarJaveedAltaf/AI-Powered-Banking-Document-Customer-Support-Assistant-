@@ -1,0 +1,14 @@
+azure-identity>=1.19
+azure-storage-blob>=12.24
+azure-storage-file-datalake>=12.18
+azure-keyvault-secrets>=4.9
+azure-ai-documentintelligence>=1.0.2
+azure-ai-textanalytics>=5.3
+azure-search-documents>=11.6
+openai>=1.60
+azure-monitor-opentelemetry>=1.6
+pypdf>=5.1
+tiktoken>=0.8
+pydantic>=2.9
+pydantic-settings>=2.6
+python-dotenv>=1.0
