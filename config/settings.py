@@ -1,4 +1,4 @@
-"""Central configuration. Endpoints come from .env; credentials come from Entra ID."""
+﻿"""Central configuration. Endpoints come from .env; credentials come from Entra ID."""
 from functools import lru_cache
 from pydantic_settings import BaseSettings, SettingsConfigDict
 from azure.identity import DefaultAzureCredential
@@ -13,6 +13,7 @@ class Settings(BaseSettings):
     keyvault_name: str
 
     ai_services_endpoint: str
+    ai_services_resource_id: str = ""
     azure_openai_endpoint: str
     azure_openai_chat_deployment: str
     azure_openai_embedding_deployment: str

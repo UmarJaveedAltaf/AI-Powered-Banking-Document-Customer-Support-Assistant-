@@ -3,4 +3,4 @@
 env.ps1
 __pycache__/
 *.pyc
-data/extracted/
+data/extracted/data/*.wav
