@@ -13,7 +13,7 @@ def _openai() -> AzureOpenAI:
                        azure_ad_token_provider=token_provider())
 
 
-def embed(texts: list[str], batch: int = 64) -> list[list[float]]:
+def embed(texts: list[str], batch: int = 64, verbose: bool | None = None) -> list[list[float]]:
     s = get_settings()
     client = _openai()
     vectors = []
@@ -21,7 +21,10 @@ def embed(texts: list[str], batch: int = 64) -> list[list[float]]:
         r = client.embeddings.create(model=s.azure_openai_embedding_deployment,
                                      input=texts[i:i + batch])
         vectors.extend(d.embedding for d in r.data)
-        print(f"  embedded {min(i + batch, len(texts))}/{len(texts)}")
+        if verbose is None:
+            verbose = len(texts) > 1
+        if verbose:
+            print(f"  embedded {min(i + batch, len(texts))}/{len(texts)}")
     return vectors
 
 
@@ -61,3 +64,5 @@ if __name__ == "__main__":
     import time
     time.sleep(3)
     print(f"Index now contains {search_client().get_document_count()} documents.")
+
+
