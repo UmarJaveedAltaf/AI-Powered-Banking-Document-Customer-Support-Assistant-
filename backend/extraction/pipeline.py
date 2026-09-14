@@ -6,6 +6,7 @@ from config.settings import get_settings, credential
 from backend.extraction.doc_intelligence import fetch_blob, analyze, table_rows, needs_ocr
 from backend.extraction.schema import normalise
 from backend.validation.rules import summary
+from backend.common.telemetry import tracked
 
 
 def store_json(payload: dict, path: str, container: str = "extracted-data") -> str:
@@ -16,6 +17,7 @@ def store_json(payload: dict, path: str, container: str = "extracted-data") -> s
     return f"{container}/{path}"
 
 
+@tracked("document_processed")
 def process(blob_path: str) -> dict:
     started = time.time()
     data = fetch_blob(blob_path)
@@ -69,3 +71,4 @@ if __name__ == "__main__":
     print("\nSample deliverable JSON (C1001):")
     r = process(paths[0])
     print(json.dumps({k: r[k] for k in ("customer_id", "loan_type", "amount", "income")}, indent=2))
+

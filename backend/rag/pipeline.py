@@ -4,6 +4,7 @@ from pathlib import Path
 from config.settings import get_settings
 from backend.search.indexer import _openai
 from backend.search.retrieval import retrieve
+from backend.common.telemetry import tracked
 
 REFUSAL = "The available documents do not contain enough information to answer this question."
 SYSTEM = Path("prompts/system_policy_assistant.md").read_text(encoding="utf-8")
@@ -39,6 +40,7 @@ def _sources(hits: list[dict]) -> list[dict]:
              "score": round(h.get("@search.score", 0), 4)} for h in hits]
 
 
+@tracked("rag_query")
 def answer(question: str, mode: str = "hybrid", top: int | None = None) -> dict:
     s = get_settings()
     hits = retrieve(question, mode=mode, top=top or s.retrieval_top_k)
@@ -110,3 +112,4 @@ if __name__ == "__main__":
     for k, v in data.items():
         if not k.startswith("_"):
             print(f"  {k:24} {v}")
+

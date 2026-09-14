@@ -12,3 +12,4 @@ tiktoken>=0.8
 pydantic>=2.9
 pydantic-settings>=2.6
 python-dotenv>=1.0azure-cognitiveservices-speech>=1.41
+azure-monitor-opentelemetry>=1.6
