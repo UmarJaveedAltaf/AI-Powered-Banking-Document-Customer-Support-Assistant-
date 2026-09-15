@@ -1,4 +1,4 @@
-"""FastAPI layer over the existing backend.
+﻿"""FastAPI layer over the existing backend.
 
 Every endpoint returns the exact shape the web frontend expects. The backend
 modules are imported unchanged; nothing here reimplements logic.
@@ -195,7 +195,7 @@ def voice_ask(req: VoiceRequest):
     if req.speak:
         name = f"{uuid.uuid4().hex[:12]}.wav"
         res = speak(r["spoken"], to_file=str(AUDIO_DIR / name))
-        r["audio_url"] = f"/voice/audio/{name}" if res.get("ok") else None
+        r["audio_url"] = f"http://localhost:8000/voice/audio/{name}" if res.get("ok") else None
     else:
         r["audio_url"] = None
     return r
