@@ -1,0 +1,145 @@
+[
+  {
+    "id": "RAG-01",
+    "question": "What is the minimum employment requirement for a home loan?",
+    "expected_terms": [
+      "3 years"
+    ],
+    "expected_source": "home_loan_policy.pdf",
+    "expected_section": "Section 3: Employment Eligibility"
+  },
+  {
+    "id": "RAG-02",
+    "question": "What documents are required for a home loan?",
+    "expected_terms": [
+      "identity",
+      "address",
+      "income",
+      "bank statement",
+      "employment",
+      "property"
+    ],
+    "expected_source": "home_loan_policy.pdf",
+    "expected_section": "Section 6: Required Documents"
+  },
+  {
+    "id": "RAG-03",
+    "question": "What is the maximum home loan amount?",
+    "expected_terms": [
+      "10,00,00,000"
+    ],
+    "expected_source": "home_loan_policy.pdf",
+    "expected_section": "Section 5: Loan Amount and Tenure"
+  },
+  {
+    "id": "RAG-04",
+    "question": "How often must KYC be updated for a low risk customer?",
+    "expected_terms": [
+      "10 years"
+    ],
+    "expected_source": "kyc_policy.pdf",
+    "expected_section": "Section 4: KYC Update Frequency"
+  },
+  {
+    "id": "RAG-05",
+    "question": "What is the minimum age for a home loan applicant?",
+    "expected_terms": [
+      "21"
+    ],
+    "expected_source": "home_loan_policy.pdf",
+    "expected_section": "Section 2: Applicant Eligibility"
+  },
+  {
+    "id": "RAG-06",
+    "question": "What is the complaint escalation process?",
+    "expected_terms": [
+      "branch",
+      "nodal",
+      "ombudsman"
+    ],
+    "expected_source": "complaint_policy.pdf",
+    "expected_section": "Section 3: Complaint Escalation Process"
+  },
+  {
+    "id": "RAG-07",
+    "question": "When must a suspicious transaction report be submitted?",
+    "expected_terms": [
+      "7 working days"
+    ],
+    "expected_source": "aml_policy.pdf",
+    "expected_section": "Section 4: Reporting Timelines"
+  },
+  {
+    "id": "RAG-08",
+    "question": "What is the minimum balance for a salary account?",
+    "expected_terms": [
+      "no minimum"
+    ],
+    "expected_source": "account_opening_policy.pdf",
+    "expected_section": "Section 4: Minimum Balance Requirements"
+  },
+  {
+    "id": "RAG-09",
+    "question": "What is the minimum credit bureau score for a personal loan?",
+    "expected_terms": [
+      "720"
+    ],
+    "expected_source": "personal_loan_policy.pdf",
+    "expected_section": "Section 7: Credit Assessment"
+  },
+  {
+    "id": "RAG-10",
+    "question": "Who has authority to sanction a home loan above 3 crore?",
+    "expected_terms": [
+      "credit committee"
+    ],
+    "expected_source": "home_loan_policy.pdf",
+    "expected_section": "Section 9: Sanction Authority and Human Review"
+  },
+  {
+    "id": "RAG-11",
+    "question": "What is the cash transaction reporting threshold?",
+    "expected_terms": [
+      "10,00,000"
+    ],
+    "expected_source": "aml_policy.pdf",
+    "expected_section": "Section 3: Transaction Monitoring Thresholds"
+  },
+  {
+    "id": "RAG-12",
+    "question": "What is the customer liability for an unauthorised digital transaction reported within three working days?",
+    "expected_terms": [
+      "zero"
+    ],
+    "expected_source": "digital_banking_policy.pdf",
+    "expected_section": "Section 4: Unauthorised Transactions and Liability"
+  },
+  {
+    "id": "RAG-13",
+    "question": "During what hours may recovery personnel contact a borrower?",
+    "expected_terms": [
+      "08:00",
+      "19:00"
+    ],
+    "expected_source": "collection_and_recovery_policy.pdf",
+    "expected_section": "Section 3: Contact Standards"
+  },
+  {
+    "id": "RAG-14",
+    "question": "What is the minimum employment requirement for a vehicle loan?",
+    "expected_terms": [
+      "1 year"
+    ],
+    "expected_source": "vehicle_loan_policy.pdf",
+    "expected_section": "Section 3: Employment Eligibility"
+  },
+  {
+    "id": "RAG-15",
+    "question": "How long does the bank have to release securities after full repayment?",
+    "expected_terms": [
+      "30 days"
+    ],
+    "expected_source": "fair_practices_code.pdf",
+    "expected_section": "Section 7: Release of Security"
+  }
+]

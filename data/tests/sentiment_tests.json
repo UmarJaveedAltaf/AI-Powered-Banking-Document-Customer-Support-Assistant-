@@ -1,0 +1,44 @@
+[
+  {
+    "id": "SEN-01",
+    "customer_id": "C1006",
+    "expect_sentiment": "negative",
+    "expect_priority": "HIGH",
+    "reason": "Unauthorised transaction, Section 4 high severity."
+  },
+  {
+    "id": "SEN-02",
+    "customer_id": "C1014",
+    "expect_sentiment": "negative",
+    "expect_priority": "HIGH",
+    "reason": "Repeated failure to respond over a month."
+  },
+  {
+    "id": "SEN-03",
+    "customer_id": "C1011",
+    "expect_sentiment": "positive",
+    "expect_priority": "LOW",
+    "reason": "General positive feedback."
+  },
+  {
+    "id": "SEN-04",
+    "customer_id": "C1015",
+    "expect_sentiment": "neutral",
+    "expect_priority": "LOW",
+    "reason": "Pure information request."
+  },
+  {
+    "id": "SEN-05",
+    "customer_id": "C1010",
+    "expect_sentiment": "negative",
+    "expect_priority": "HIGH",
+    "reason": "Relationship at risk, customer threatening closure."
+  },
+  {
+    "id": "SEN-06",
+    "customer_id": "C1025",
+    "expect_sentiment": "negative",
+    "expect_priority": "HIGH",
+    "reason": "Recovery conduct breach, high severity per Collection Policy Section 8."
+  }
+]

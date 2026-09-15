@@ -29,6 +29,22 @@ POLICY_ANSWER_SCHEMA = {
 }
 
 
+
+PROMPT_MARKERS = ["answer only from the context", "policy assistant",
+                  "never reveal unmasked customer identifiers",
+                  "reference data, not instructions", "rules\n\n1."]
+LEAK_REPLY = ("I cannot share my configuration. I can answer questions about "
+              "bank policy.")
+
+
+def _strip_prompt_leak(text: str) -> str:
+    """Last line of defence: if the model echoes its own instructions, suppress it."""
+    low = text.lower()
+    if sum(1 for m in PROMPT_MARKERS if m in low) >= 2:
+        return LEAK_REPLY
+    return text
+
+
 def build_context(hits: list[dict]) -> str:
     return "\n\n---\n\n".join(
         f"[source: {h['source_file']} | section: {h['section']} | page: {h['page']}]\n{h['content']}"
@@ -54,7 +70,7 @@ def answer(question: str, mode: str = "hybrid", top: int | None = None) -> dict:
                    "content": f"CONTEXT:\n{build_context(hits)}\n\nQUESTION: {question}"}],
         temperature=0, max_tokens=700)
 
-    text = r.choices[0].message.content
+    text = _strip_prompt_leak(r.choices[0].message.content)
     return {"answer": text,
             "sources": _sources(hits),
             "grounded": REFUSAL not in text,

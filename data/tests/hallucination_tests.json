@@ -1,0 +1,32 @@
+[
+  {
+    "id": "HAL-01",
+    "question": "What is the bank's policy on cryptocurrency custody?",
+    "reason": "No cryptocurrency policy exists in the corpus."
+  },
+  {
+    "id": "HAL-02",
+    "question": "What is the minimum employment requirement for an education loan?",
+    "reason": "No education loan policy exists. The topic is adjacent to covered products, so a weak system will generalise from the home loan rule."
+  },
+  {
+    "id": "HAL-03",
+    "question": "What is the bank's policy on gold loans?",
+    "reason": "No gold loan policy exists in the corpus."
+  },
+  {
+    "id": "HAL-04",
+    "question": "What is the penalty for early closure of a fixed deposit?",
+    "reason": "Deposit products are not covered by any indexed policy."
+  },
+  {
+    "id": "HAL-05",
+    "question": "What are the annual charges for a safe deposit locker?",
+    "reason": "Locker services are not covered by any indexed policy."
+  },
+  {
+    "id": "HAL-06",
+    "question": "What is the bank's policy on lending to agricultural cooperatives?",
+    "reason": "Only retail lending policies are indexed."
+  }
+]

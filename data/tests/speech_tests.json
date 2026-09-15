@@ -1,0 +1,29 @@
+[
+  {
+    "id": "SPK-01",
+    "utterance": "What documents are required for a personal loan?",
+    "expect_terms": [
+      "identity",
+      "address",
+      "income",
+      "bank statement",
+      "employment"
+    ]
+  },
+  {
+    "id": "SPK-02",
+    "utterance": "How often must KYC be updated?",
+    "expect_terms": [
+      "2 years",
+      "8 years",
+      "10 years"
+    ]
+  },
+  {
+    "id": "SPK-03",
+    "utterance": "What is the minimum employment requirement for a home loan?",
+    "expect_terms": [
+      "3 years"
+    ]
+  }
+]

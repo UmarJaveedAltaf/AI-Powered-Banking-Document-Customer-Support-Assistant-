@@ -1,0 +1,67 @@
+[
+  {
+    "id": "EXT-01",
+    "blob": "loan/customer_1001_home_loan_application.pdf",
+    "expect": {
+      "customer_id": "C1001",
+      "total_experience_years": 2.0,
+      "monthly_income": 125000,
+      "requested_amount": 7500000,
+      "bureau_score": 744
+    }
+  },
+  {
+    "id": "EXT-02",
+    "blob": "loan/customer_1002_home_loan_application.pdf",
+    "expect": {
+      "customer_id": "C1002",
+      "total_experience_years": 7.0,
+      "monthly_income": 98000,
+      "requested_amount": 4200000,
+      "bureau_score": 781
+    }
+  },
+  {
+    "id": "EXT-03",
+    "blob": "loan/customer_1004_home_loan_application.pdf",
+    "expect": {
+      "customer_id": "C1004",
+      "total_experience_years": 9.0,
+      "monthly_income": 310000,
+      "requested_amount": 11500000,
+      "bureau_score": 698
+    }
+  },
+  {
+    "id": "EXT-04",
+    "blob": "loan/customer_1005_personal_loan_application.pdf",
+    "expect": {
+      "customer_id": "C1005",
+      "total_experience_years": 4.0,
+      "current_employer_months": 8.0,
+      "monthly_income": 41000,
+      "bureau_score": 669
+    }
+  },
+  {
+    "id": "EXT-05",
+    "blob": "loan/customer_1013_credit_card_loan_application.pdf",
+    "expect": {
+      "customer_id": "C1013",
+      "total_experience_years": 0.75,
+      "monthly_income": 95000,
+      "bureau_score": 694
+    }
+  },
+  {
+    "id": "EXT-06",
+    "blob": "statements/customer_1001_bank_statement_scanned.pdf",
+    "ocr_required": true,
+    "expect_in_text": [
+      "90210041234",
+      "ABCDE1234F",
+      "MNBK0000412",
+      "Rahul Sharma"
+    ]
+  }
+]

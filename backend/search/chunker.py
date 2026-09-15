@@ -16,6 +16,11 @@ TITLES = {
     "account_opening_policy.pdf": "Account Opening Policy 2026",
     "aml_policy.pdf": "Anti-Money Laundering Policy 2026",
     "complaint_policy.pdf": "Customer Complaint Policy 2026",
+    "vehicle_loan_policy.pdf": "Vehicle Loan Policy 2026",
+    "fair_practices_code.pdf": "Fair Practices Code 2026",
+    "data_privacy_policy.pdf": "Customer Data Privacy Policy 2026",
+    "digital_banking_policy.pdf": "Digital Banking Policy 2026",
+    "collection_and_recovery_policy.pdf": "Collection and Recovery Policy 2026",
 }
 
 
@@ -88,3 +93,4 @@ if __name__ == "__main__":
     emp = [c for c in hl if "Employment Eligibility" in c["section"]]
     print(f"\n--- Employment Eligibility chunk (page {emp[0]['page']}) ---")
     print(emp[0]["content"][:600])
+

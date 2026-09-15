@@ -53,3 +53,25 @@ def mask_display(fields: dict):
 
 
 PRIORITY_COLOUR = {"HIGH": "#d13438", "MEDIUM": "#c19c00", "LOW": "#107c10"}
+
+
+@st.cache_data(ttl=120, show_spinner=False)
+def live_stats():
+    from backend.ingestion.runtime_upload import corpus_stats
+    return corpus_stats()
+
+
+def handle_upload(data: bytes, filename: str, kind: str):
+    """Not cached: every upload must actually run."""
+    from backend.ingestion.runtime_upload import upload_and_process
+    return upload_and_process(data, filename, kind)
+
+
+@st.cache_data(ttl=600, show_spinner=False)
+def synthesise(text: str, path: str = "data/ui_reply.wav"):
+    from backend.ai_services.speech import speak
+    r = speak(text, to_file=path)
+    if not r.get("ok"):
+        return None
+    with open(path, "rb") as f:
+        return f.read()
