@@ -4,3 +4,5 @@ env.ps1
 __pycache__/
 *.pyc
 data/extracted/data/*.wav
+data/*.wav
+data/poisoned_policy.pdf
